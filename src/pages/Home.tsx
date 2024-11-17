@@ -211,7 +211,7 @@ const Home = () => {
   }, [itemsCount]);
 
   useEffect(() => {
-    document.title = `Miruro | Watch Anime Online, Free Anime Streaming`;
+    document.title = `PirateRat | Watch Anime Online, Free Anime Streaming`;
   }, [activeTab]);
 
   useEffect(() => {
@@ -245,7 +245,7 @@ const Home = () => {
         <CardGrid
           animeData={animeData}
           hasNextPage={false}
-          onLoadMore={() => {}}
+          onLoadMore={() => { }}
         />
       )}
     </Section>

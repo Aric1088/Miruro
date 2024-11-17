@@ -10,7 +10,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability, please report it by opening an [issue](https://github.com/Miruro-no-kuon/Miruro-no-Kuon/issues). To help us better understand and address the issue, please follow the template provided when creating a new issue.
+If you discover a security vulnerability, please report it by opening an [issue](https://github.com/PirateRat-no-kuon/PirateRat-no-Kuon/issues). To help us better understand and address the issue, please follow the template provided when creating a new issue.
 
 ### Reporting Process
 
@@ -35,4 +35,4 @@ We follow [Semantic Versioning](https://semver.org/) for our releases. Security 
 
 ## Contact
 
-For any questions or additional information regarding security, please contact miruro@proton.me
+For any questions or additional information regarding security, please contact PirateRat@proton.me

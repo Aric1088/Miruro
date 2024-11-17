@@ -111,72 +111,10 @@ export function Footer() {
       <footer>
         <FooterBaseContainer aria-label='Main Footer' $isSub={false}>
           <Text as='p' $isSub={false}>
-            <FooterLogoImage alt='Footer Logo' /> <br />
-            This website does not retain any files on its server. Rather, it
-            solely provides links to media content hosted by third-party
-            services.
+            Powered by Rats in the Cloud. Squeak
           </Text>
-          <StyledLinkList aria-label='Footer Links'>
-            <FooterLink to='/about' title='About Us'>
-              About
-            </FooterLink>
-            <FooterLink
-              to='https://www.miruro.com'
-              target='_blank'
-              title='Domains'
-            >
-              Domains
-            </FooterLink>
-            <FooterLink to='/pptos' title='Privacy Policy and Terms of Service'>
-              Privacy & ToS
-            </FooterLink>
-          </StyledLinkList>
-        </FooterBaseContainer>
-        <FooterBaseContainer aria-label='Sub Footer' $isSub={true}>
-          <Text as='p' $isSub={true}>
-            &copy; {year}{' '}
-            <a
-              href='https://www.miruro.com'
-              rel='noopener noreferrer'
-              style={{ color: 'grey' }}
-            >
-              miruro.com
-            </a>{' '}
-            | Website Made by <strong>Miruro no Kuon</strong>
-          </Text>
-          <nav aria-label='Social Links'>
-            <SocialIconsWrapper>
-              {[
-                {
-                  href: 'https://www.reddit.com/r/miruro',
-                  Icon: FaReddit,
-                  label: 'Reddit',
-                },
-                {
-                  href: 'https://discord.gg/dubRrtfpFn',
-                  Icon: FaDiscord,
-                  label: 'Discord',
-                },
-                {
-                  href: 'https://twitter.com/miruro_official',
-                  Icon: FaTwitter,
-                  label: 'Twitter',
-                },
-              ].map(({ href, Icon, label }) => (
-                <ShareButton
-                  key={href}
-                  href={href}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label={`Miruro on ${label}`}
-                >
-                  <Icon aria-hidden='true' />
-                </ShareButton>
-              ))}
-            </SocialIconsWrapper>
-          </nav>
         </FooterBaseContainer>
       </footer>
-    </PageWrapper>
+    </PageWrapper >
   );
 }

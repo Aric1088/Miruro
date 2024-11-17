@@ -350,7 +350,7 @@ const Watch: React.FC = () => {
     const defaultLanguage = 'sub';
     setSourceType(
       localStorage.getItem(getSourceTypeKey(animeId || '')) ||
-        defaultSourceType,
+      defaultSourceType,
     );
     setLanguage(
       localStorage.getItem(getLanguageKey(animeId || '')) || defaultLanguage,
@@ -454,8 +454,8 @@ const Watch: React.FC = () => {
                 : null;
               return savedEpisode
                 ? transformedEpisodes.find(
-                    (ep: any) => ep.number === savedEpisode.number,
-                  ) || transformedEpisodes[0]
+                  (ep: any) => ep.number === savedEpisode.number,
+                ) || transformedEpisodes[0]
                 : transformedEpisodes[0];
             }
           })();
@@ -619,7 +619,7 @@ const Watch: React.FC = () => {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [episodes, currentEpisode, handleEpisodeSelect, lastKeypressTime]);
 
-  // TODO SET PAGE TITLE TO MIRURO + ANIME TITLE
+  // TODO SET PAGE TITLE TO PirateRat + ANIME TITLE
   useEffect(() => {
     if (animeInfo && animeInfo.title) {
       document.title =
@@ -628,7 +628,7 @@ const Watch: React.FC = () => {
           animeInfo.title.romaji ||
           animeInfo.title.romaji ||
           '') +
-        ' | Miruro';
+        ' | PirateRat';
     }
   }, [animeInfo]);
 
@@ -677,15 +677,15 @@ const Watch: React.FC = () => {
   return (
     <WatchContainer>
       {animeInfo &&
-      animeInfo.status === 'Not yet aired' &&
-      animeInfo.trailer ? (
+        animeInfo.status === 'Not yet aired' &&
+        animeInfo.trailer ? (
         <div style={{ textAlign: 'center' }}>
           <strong>
             <h2>Time Remaining:</h2>
           </strong>
           {animeInfo &&
-          animeInfo.nextAiringEpisode &&
-          countdown !== 'Airing now or aired' ? (
+            animeInfo.nextAiringEpisode &&
+            countdown !== 'Airing now or aired' ? (
             <p>
               <FaBell /> {countdown}
             </p>
